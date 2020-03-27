@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "Dog.h"
+#import "Cat.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    Cat *cat = [Cat new];
+
+    [cat performSelector:NSSelectorFromString(@"run")];
+    
+    [Cat performSelector:NSSelectorFromString(@"sleep")];
 }
 
 

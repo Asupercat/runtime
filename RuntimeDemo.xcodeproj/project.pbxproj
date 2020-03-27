@@ -14,6 +14,8 @@
 		442E3A86242E517500E11FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442E3A85242E517500E11FDF /* Assets.xcassets */; };
 		442E3A89242E517500E11FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442E3A87242E517500E11FDF /* LaunchScreen.storyboard */; };
 		442E3A8C242E517500E11FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442E3A8B242E517500E11FDF /* main.m */; };
+		442E3A94242E518E00E11FDF /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 442E3A93242E518E00E11FDF /* Cat.m */; };
+		442E3A97242E519A00E11FDF /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 442E3A96242E519A00E11FDF /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		442E3A88242E517500E11FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442E3A8A242E517500E11FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		442E3A8B242E517500E11FDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		442E3A92242E518E00E11FDF /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		442E3A93242E518E00E11FDF /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		442E3A95242E519A00E11FDF /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		442E3A96242E519A00E11FDF /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				442E3A7D242E517100E11FDF /* SceneDelegate.m */,
 				442E3A7F242E517100E11FDF /* ViewController.h */,
 				442E3A80242E517100E11FDF /* ViewController.m */,
+				442E3A95242E519A00E11FDF /* Dog.h */,
+				442E3A96242E519A00E11FDF /* Dog.m */,
+				442E3A92242E518E00E11FDF /* Cat.h */,
+				442E3A93242E518E00E11FDF /* Cat.m */,
 				442E3A82242E517100E11FDF /* Main.storyboard */,
 				442E3A85242E517500E11FDF /* Assets.xcassets */,
 				442E3A87242E517500E11FDF /* LaunchScreen.storyboard */,
@@ -146,10 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442E3A97242E519A00E11FDF /* Dog.m in Sources */,
 				442E3A81242E517100E11FDF /* ViewController.m in Sources */,
 				442E3A7B242E517100E11FDF /* AppDelegate.m in Sources */,
 				442E3A8C242E517500E11FDF /* main.m in Sources */,
 				442E3A7E242E517100E11FDF /* SceneDelegate.m in Sources */,
+				442E3A94242E518E00E11FDF /* Cat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
