@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Dog : NSObject
 
+@property(nonatomic ,assign) NSInteger age;
+@property(nonatomic ,strong) NSString *name;
+
 -(void)eat;
 
 +(void)sleep;
