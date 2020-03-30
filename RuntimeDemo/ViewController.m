@@ -20,6 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSArray *arr = @[@"1"];
+    [arr objectAtIndex:2];
+}
+
+-(void)runtimeTest{
     Cat *cat = [Cat new];
     
     [cat performSelector:NSSelectorFromString(@"run")];
@@ -34,12 +40,12 @@
      获取isa
      object_getClass(<#id  _Nullable obj#>)
      */
-
+    
     Class cls = objc_getClass([@"Dog" UTF8String]);
     NSLog(@"class :- %@",cls);
     NSLog(@"classMame :- %s",class_getName(cls));
-
-
+    
+    
     /**获取成员变量列表
      去 class 的 class_ro_t 中 的 ivar_list 中获取ivar_t
      class_copyIvarList(<#Class  _Nullable __unsafe_unretained cls#>, <#unsigned int * _Nullable outCount#>)
@@ -60,7 +66,7 @@
         [arr addObject:ivarDic];
     }
     free(ivarList);
-//    NSLog(@"%@",arr);
+    //    NSLog(@"%@",arr);
     
     /**获取属性列表
      去 class 的 class_rw_t 中 property_array_t  获取  property_t
@@ -83,7 +89,7 @@
      
      只能在 objc_allocateClassPairz之后 , objc_registerClassPair之前使用
      因为编译好的类 InstanceSize 因为内存布局已经确定了
-
+     
      1.首先判断是否元类 元类无法添加
      2.已经加载进内存的类是无法添加的
      3.如果旧列表已经存在 -> 新建一个列表 添加一个变量 -> 旧列表的内容添加到新列表
@@ -91,14 +97,13 @@
      
      创建类 , 并给类设置基本信息 并且关联父类元类关系
      objc_allocateClassPair(<#Class  _Nullable __unsafe_unretained superclass#>, <#const char * _Nonnull name#>, <#size_t extraBytes#>)
-
+     
      将类名和类信息添加到全局列表中
      objc_registerClassPair(<#Class  _Nonnull __unsafe_unretained cls#>)
      */
     
-    
-    
+    /**动态添加方法
+     class_addMethod(<#Class  _Nullable __unsafe_unretained cls#>, <#SEL  _Nonnull name#>, <#IMP  _Nonnull imp#>, <#const char * _Nullable types#>)
+     */
 }
-
-
 @end

@@ -16,6 +16,8 @@
 		442E3A8C242E517500E11FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442E3A8B242E517500E11FDF /* main.m */; };
 		442E3A94242E518E00E11FDF /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 442E3A93242E518E00E11FDF /* Cat.m */; };
 		442E3A97242E519A00E11FDF /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 442E3A96242E519A00E11FDF /* Dog.m */; };
+		44D58CDF2431C71000CA793A /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D58CDE2431C71000CA793A /* NSArray+Category.m */; };
+		44D58CE52431C82D00CA793A /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D58CE42431C82D00CA793A /* NSObject+Swizzling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		442E3A93242E518E00E11FDF /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		442E3A95242E519A00E11FDF /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		442E3A96242E519A00E11FDF /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		44D58CDD2431C71000CA793A /* NSArray+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Category.h"; sourceTree = "<group>"; };
+		44D58CDE2431C71000CA793A /* NSArray+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Category.m"; sourceTree = "<group>"; };
+		44D58CE32431C82D00CA793A /* NSObject+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		44D58CE42431C82D00CA793A /* NSObject+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +79,37 @@
 				442E3A7D242E517100E11FDF /* SceneDelegate.m */,
 				442E3A7F242E517100E11FDF /* ViewController.h */,
 				442E3A80242E517100E11FDF /* ViewController.m */,
-				442E3A95242E519A00E11FDF /* Dog.h */,
-				442E3A96242E519A00E11FDF /* Dog.m */,
-				442E3A92242E518E00E11FDF /* Cat.h */,
-				442E3A93242E518E00E11FDF /* Cat.m */,
 				442E3A82242E517100E11FDF /* Main.storyboard */,
+				44D58CD82431C5FA00CA793A /* 消息机制 */,
+				44D58CD92431C62400CA793A /* Method Swizzling处理数组越界 */,
 				442E3A85242E517500E11FDF /* Assets.xcassets */,
 				442E3A87242E517500E11FDF /* LaunchScreen.storyboard */,
 				442E3A8A242E517500E11FDF /* Info.plist */,
 				442E3A8B242E517500E11FDF /* main.m */,
 			);
 			path = RuntimeDemo;
+			sourceTree = "<group>";
+		};
+		44D58CD82431C5FA00CA793A /* 消息机制 */ = {
+			isa = PBXGroup;
+			children = (
+				442E3A95242E519A00E11FDF /* Dog.h */,
+				442E3A96242E519A00E11FDF /* Dog.m */,
+				442E3A92242E518E00E11FDF /* Cat.h */,
+				442E3A93242E518E00E11FDF /* Cat.m */,
+			);
+			path = "消息机制";
+			sourceTree = "<group>";
+		};
+		44D58CD92431C62400CA793A /* Method Swizzling处理数组越界 */ = {
+			isa = PBXGroup;
+			children = (
+				44D58CDD2431C71000CA793A /* NSArray+Category.h */,
+				44D58CDE2431C71000CA793A /* NSArray+Category.m */,
+				44D58CE32431C82D00CA793A /* NSObject+Swizzling.h */,
+				44D58CE42431C82D00CA793A /* NSObject+Swizzling.m */,
+			);
+			path = "Method Swizzling处理数组越界";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				442E3A97242E519A00E11FDF /* Dog.m in Sources */,
+				44D58CDF2431C71000CA793A /* NSArray+Category.m in Sources */,
 				442E3A81242E517100E11FDF /* ViewController.m in Sources */,
+				44D58CE52431C82D00CA793A /* NSObject+Swizzling.m in Sources */,
 				442E3A7B242E517100E11FDF /* AppDelegate.m in Sources */,
 				442E3A8C242E517500E11FDF /* main.m in Sources */,
 				442E3A7E242E517100E11FDF /* SceneDelegate.m in Sources */,
